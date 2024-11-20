@@ -1,0 +1,121 @@
+.contacts {
+    position: relative;
+    display: inline-block;
+}
+
+    .contacts dd {
+        margin-bottom: 1.2em;
+        overflow: hidden;
+    }
+
+    .contacts dt {
+        float: left;
+        min-width: 10em;
+    }
+
+.contacts_down {
+    position: relative;
+    display: inline-block;
+}
+
+    .contacts_down dd {
+        margin-bottom: 1.2em;
+        overflow: hidden;
+    }
+
+    .contacts_down dt {
+        float: left;
+        min-width: 10em;
+    }
+
+.contacts dd::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(1.5em);
+    border-bottom: 1px solid #dadada;
+}
+
+.header_box_title {
+    margin: 0 0 -25px 30px;
+}
+
+.header__avatar {
+    border-radius: 80%;
+    width: 115px;
+    height: 115px;
+}
+
+.header__title {
+    margin: auto;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 1.2;
+    align-items: center;
+}
+
+.header__subtitle {
+    color: #7d7d7f;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+    position: center;
+}
+
+.name_textContainer {
+    /*display: flex;*/
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box_header {
+    box-sizing: border-box;
+    margin: 40px 0 20px 30px;
+    display: flex;
+    width: 540px;
+    column-gap: 50px;
+    row-gap: 10px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: rgba(247, 247, 247, 1);
+    box-shadow: rgba(171, 171, 171) 3px 4px;
+}
+
+.links {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+dd {
+    display: block;
+    margin-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+
+dt {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.laoutField {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 610px;
+    background: RGB(224, 224, 224);
+    padding: 15px;
+    z-index: 9999;
+}
+
+body {
+    font-family: 'Prosto Sans';
+    display: block;
+    margin: 8px;
+    background-image: url('back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+}
