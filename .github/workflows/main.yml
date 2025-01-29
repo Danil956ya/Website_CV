@@ -10,12 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      
-      # Build the site
-      - name: Build site
-        run: |
-          npm install
-          npm run build
 
       # Deploy to hosting service
       - name: Deploy to Hosting Service
